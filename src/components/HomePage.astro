@@ -1,0 +1,16 @@
+---
+const { page } = Astro.props;
+---
+      {/* <h4 class="card-title">{page.title}</h4> */}
+      <div class="content-wrap">
+        <div class="entry-content-wrap">
+          <div class="entry-content single-content">
+            <article set:html={page.content}></article>
+          </div>
+        </div>
+      </div>
+
+<style>
+
+
+</style>

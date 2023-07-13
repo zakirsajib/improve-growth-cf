@@ -1,0 +1,18 @@
+---
+import HomePage from "../components/HomePage.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+import { homePageContentQuery } from "../lib/api";
+
+const data = await homePageContentQuery();
+const page = data.page;
+
+Astro.response.headers.set('Cache-Control','max-age=600, must-revalidate');
+
+---
+
+<MainLayout title='Home Page'>
+  <main>
+      <HomePage page={page}></HomePage>
+  </main>
+</MainLayout>
