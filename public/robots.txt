@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://babysafetravel-cloudflare.pages.dev/sitemap-index.xml
+Sitemap: https://improve-growth.pages.dev/sitemap-index.xml
